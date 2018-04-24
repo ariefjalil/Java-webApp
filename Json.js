@@ -30,3 +30,5 @@ $(document).ready(function(){
     });
 
 });
+
+//add function
