@@ -1,5 +1,5 @@
 var symbolSize = 30;
-//var alphabet = "tradeshift";
+var alphabet = ("T","r","a","d","e","s","h","i","f","t")
 var stream;
 
 
@@ -29,13 +29,13 @@ function Symbol(x,y, speed){
 	this.y = y;
 	this.value;
 	this.speed = speed;
-	this.switchInterval = round(random(2,20)); 
+	this.switchInterval = round(random(2,30)); 
 
 	this.setToRandomSymbol = function() {
 		if(frameCount % this.switchInterval ==0){
 		this.value = String.fromCharCode(
 			0x30A0 + round(random(0,96))
-			//0x0041 + round(random(0,25))
+
 			);
 			}
 		}
