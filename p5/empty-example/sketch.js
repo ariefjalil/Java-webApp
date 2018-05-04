@@ -35,11 +35,11 @@ function Symbol(x,y, speed){
 		if(frameCount % this.switchInterval ==0){
 		this.value = String.fromCharCode(
 			0x30A0 + round(random(0,96))
-
+			
 			);
 			}
 		}
-
+//random init
 			this.rain = function(){
 				if (this.y >= height){
 					this.y = 0;
@@ -50,6 +50,8 @@ function Symbol(x,y, speed){
 			}
 
 	}
+
+//---------
 
 
 function Stream(){
