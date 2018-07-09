@@ -20,6 +20,7 @@ function draw(){
 		background(0);
 		stream.render();
 		//console.log("java");
+		//add console
 		
 
 }
