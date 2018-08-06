@@ -1,5 +1,4 @@
 var symbolSize = 30;
-var alphabet = ("T","r","a","d","e","s","h","i","f","t")
 var stream;
 
 
