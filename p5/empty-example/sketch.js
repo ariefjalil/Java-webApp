@@ -34,10 +34,12 @@ function Symbol(x,y, speed){
 	this.setToRandomSymbol = function() {
 		if(frameCount % this.switchInterval ==0){
 		this.value = String.fromCharCode(
-			0x30A0 + round(random(0,96))
+			0x30A0 + round(random(0,96))   //added japanese matrix 
 			
 			);
 			}
+
+	this.x = x //function for  multiple matrix rain
 		}
 //random init
 			this.rain = function(){
@@ -49,7 +51,7 @@ function Symbol(x,y, speed){
 				}
 			}
 
-	}
+	} //0x30A0 + round(random(0,96))
 
 //---------
 
