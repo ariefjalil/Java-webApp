@@ -4,6 +4,7 @@ function saveIssue(e) {
   var issueDesc = document.getElementById('issueDescInput').value;
   var issueSeverity = document.getElementById('issueSeverityInput').value;
   var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
+  var dateCreateds = Date();
   var issueId = chance.guid();
   var issueStatus = 'Open';
 
@@ -12,7 +13,8 @@ function saveIssue(e) {
     description: issueDesc,
     severity: issueSeverity,
     assignedTo: issueAssignedTo,
-    status: issueStatus
+    status: issueStatus,
+    dateCreated: dateCreateds
   }
 
   if (localStorage.getItem('issues') == null) {
@@ -72,9 +74,11 @@ function fetchIssues() {
     var severity = issues[i].severity;
     var assignedTo = issues[i].assignedTo;
     var status = issues[i].status;
+    var dates = issues[i].dateCreated;
 
     issuesList.innerHTML +=   '<div class="well">'+
                               '<h6>Issue ID: ' + id + '</h6>'+
+                              '<h7>Date Created: ' + dates + '</h6>'+
                               '<p><span class="label label-info">' + status + '</span></p>'+
                               '<h3>' + desc + '</h3>'+
                               '<p><span class="glyphicon glyphicon-time"></span> ' + severity + '</p>'+
