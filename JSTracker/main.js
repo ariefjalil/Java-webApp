@@ -1,20 +1,23 @@
 document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
+//Add DBConnect
 
 function saveIssue(e) {
   var issueDesc = document.getElementById('issueDescInput').value;
   var issueSeverity = document.getElementById('issueSeverityInput').value;
   var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
-  var dateCreateds = Date();
+  var issueDetails= document.getElementById('issueDetailsInput').value;
   var issueId = chance.guid();
   var issueStatus = 'Open';
+  var datess = Date();
 
   var issue = {
     id: issueId,
     description: issueDesc,
     severity: issueSeverity,
+    details: issueDetails,
     assignedTo: issueAssignedTo,
     status: issueStatus,
-    dateCreated: dateCreateds
+    dateCreated : datess
   }
 
   if (localStorage.getItem('issues') == null) {
@@ -75,12 +78,14 @@ function fetchIssues() {
     var assignedTo = issues[i].assignedTo;
     var status = issues[i].status;
     var dates = issues[i].dateCreated;
+    var detail = issues[i].details;
 
     issuesList.innerHTML +=   '<div class="well">'+
                               '<h6>Issue ID: ' + id + '</h6>'+
-                              '<h7>Date Created: ' + dates + '</h6>'+
+                              '<h6>Date Created: ' + dates + '</h6>'+
                               '<p><span class="label label-info">' + status + '</span></p>'+
                               '<h3>' + desc + '</h3>'+
+                              '<p>' + detail + '</p>'+
                               '<p><span class="glyphicon glyphicon-time"></span> ' + severity + '</p>'+
                               '<p><span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>'+
                               '<a href="#" onclick="setStatusClosed(\''+id+'\')" class="btn btn-warning">Close</a> '+
