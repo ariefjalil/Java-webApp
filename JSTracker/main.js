@@ -1,6 +1,7 @@
 document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
 //Add DBConnect
 
+
 function saveIssue(e) {
   var issueDesc = document.getElementById('issueDescInput').value;
   var issueSeverity = document.getElementById('issueSeverityInput').value;
