@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +12,12 @@
     <!-- Latest compiled and minified CSS and Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
+<div w3-include-html="nav_bar.html">
 
+</div>
   <body onload="fetchIssues()">
     <div class="container">
-      <h1>TS IssueTracker <small>by AJX</small></h1>
+      <h1>Asdf asdfffzzz <small>by AJX</small></h1>
       <div class="jumbotron">
         <h3>Add New Issue:</h3>
         <form id="issueInputForm">
@@ -55,6 +59,8 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        <!-- ORIGINAL Strap <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     <script src="main.js"></script>
-
+    <script>
+      w3IncludeHTML();
+    </script>
   </body>
 </html>

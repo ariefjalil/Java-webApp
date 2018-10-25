@@ -16,7 +16,7 @@ function setup(){
 }
 
 function draw(){
-		background(0);
+		background(0,150);
 		stream.render();
 		//console.log("java");
 		//add console
@@ -39,7 +39,8 @@ function Symbol(x,y, speed){
 			);
 			}
 
-	this.x = x //function for  multiple matrix rain
+	this.x = x
+
 		}
 //random init
 			this.rain = function(){

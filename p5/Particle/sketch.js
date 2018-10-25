@@ -1,7 +1,7 @@
 particles = [];
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(500, 400);
 }
 
 function draw() {
@@ -10,6 +10,7 @@ function draw() {
     let p = new Particle();
     particles.push(p);
   }
+
   for (let i = particles.length - 1; i >= 0; i--) {
     particles[i].update();
     particles[i].show();
@@ -23,8 +24,8 @@ function draw() {
 class Particle {
 
   constructor() {
-    this.x = 300;
-    this.y = 380;
+    this.x = 250;
+    this.y = 400;
     this.vx = random(-1, 2);
     this.vy = random(-5, -1);
     this.alpha = 255;
@@ -35,8 +36,8 @@ class Particle {
   }
 
   update() {
-    this.x += this.vx;
     this.y += this.vy;
+    this.x += this.vx;
     this.alpha -= 5;
 
   }
