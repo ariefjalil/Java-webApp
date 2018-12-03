@@ -1,3 +1,4 @@
+//document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
 document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
 //Add DBConnect
 
