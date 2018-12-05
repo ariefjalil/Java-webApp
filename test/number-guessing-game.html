@@ -64,6 +64,7 @@
 
 //goto browser and type checkGuess()
   function checkGuess(){
+    guessSubmit.addEventListener('click',checkGuess); //add to guessSubmit button.
     //alert('This is a placeholder');
     let userGuess = Number(guessField.value);
     if (guessCount === 1){
@@ -72,20 +73,20 @@
     guesses.textContent += userGuess + ' ';
 
     if (userGuess === randomNumber) {
-      lastResult.textContent = "You got it right!";
+      lastResult.textContent = "right!";
       lastResult.style.backgroundColor ='green';
       lowOrHi.textContent = ' ';
       setGameOver();
     } else if (guessCount === 10) {
-      lastResut.textContent = ' GAME OVER!!!';
+      lastResut.textContent = ' gg!!';
       setGameOver();
     } else {
       lastResult.textContent = 'Wrong';
       lastResult.style.backgroundColor = 'red';
       if(userGuess < randomNumber){
-        lowOrHi.textContent = 'Last guess was low';
+        lowOrHi.textContent = 'too low';
       } else if (userGuess > randomNumber){
-        lowOrHi.textContent = 'Last guess was too high!';
+        lowOrHi.textContent = 'too high!';
       }
     }
 
