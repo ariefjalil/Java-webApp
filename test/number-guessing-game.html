@@ -64,7 +64,7 @@
 
 //goto browser and type checkGuess()
   function checkGuess(){
-    guessSubmit.addEventListener('click',checkGuess); //add to guessSubmit button.
+
     //alert('This is a placeholder');
     let userGuess = Number(guessField.value);
     if (guessCount === 1){
@@ -94,6 +94,14 @@
     guessField.value = '';
     guessField.focus();
   }
+
+  function setGameOver(){
+    alert('this is a placeholder');
+
+
+
+  }
+    guessSubmit.addEventListener('click',checkGuess); //add to guessSubmit button.
 
   </script>
 
