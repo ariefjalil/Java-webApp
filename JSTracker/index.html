@@ -16,27 +16,112 @@
       h1.sign-in {
         font-style:Monaco,MonoSpace;
       }
+      @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+      .login-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+      }
+
+
+      .form {
+        position: relative;
+        z-index: 1;
+        background: #e6e6e6;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #FFFFF;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+      }
+      /*.form button:hover,.form button:active,.form button:focus {
+        background: #9999ff;
+      }*/
+      .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+      .form .message a {
+        color: #0000FF;
+        text-decoration: none;
+      }
+      .form .register-form {
+        display: none;
+      }
+      .container {
+        position: relative;
+        z-index: 1;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .container:before, .container:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container .info {
+        margin: 50px auto;
+        text-align: center;
+      }
+      .container .info h1 {
+        margin: 0 0 15px;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 300;
+        color: #1a1a1a;
+      }
+      .container .info span {
+        color: #4d4d4d;
+        font-size: 12px;
+      }
+      .container .info span a {
+        color: #000000;
+        text-decoration: none;
+      }
+      .container .info span .fa {
+        color: #EF3B3A;
+      }
+      body {
+        background: #e6e6e6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(right, #e6e6e6, #e6e6e6);
+        background: -moz-linear-gradient(right, #e6e6e6, #e6e6e6);
+        background: -o-linear-gradient(right, #e6e6e6, #e6e6e6);
+        background: linear-gradient(to left, #e6e6e6, #e6e6e6);
+        font-family: "Roboto", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
     </style>
 
     <!-- New Intergration-->
 
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
   </head>
 
 
@@ -77,92 +162,45 @@
   <body>
 
 <!--New login form-->
-    <div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
-				</div>
 
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Member Login
-					</span>
+<div class="login-page">
+  <div class="form">
+    <h1 class="text-center">Welcome!</h1>
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="Email"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" action="main.html">
+      <input type="text" placeholder="Email address*"/>
+      <input type="password" placeholder="Password*"/>
+      <button type="submit" class="btn btn-primary"><b><u>LOGIN</u></b></button>
+      </form>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
+  </div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
 
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
 <!--END New login form-->
 <!-- https://media.giphy.com/media/wsVRWfoRg1D79zglIj/giphy.gif rakesh-->
 <!-- rakesh left https://i.imgflip.com/2peq9n.gif -->
 <!-- <hr> FOR LINE -->
-<div class="form">
-    <fieldset>
-      <div class="text-center">
-      <h1 class="sign-in">Welcome!</h1>
 
-      <div>
-        <!--  <label for="userName">Username:</label> -->
-          <input type="text" id="username" name="username"
-                 required placeholder ="Email Address*"/>
-      </div>
-
-      <div>
-        <!--  <label for="password">Password:</label> -->
-          <input type="password" id="password" name="password" style="margin:0.8px"
-                 minlength="8" required
-                 placeholder="Password*" />
-
-    </div>
-
-    <div>
+<!--
+   <div>
       <form action ="main.html">
-        <input type="submit" class="btn btn-primary" style="margin:15px" value="LOG IN">
+        <input type="submit" class="btn btn-warning" style="margin:15px" value="LOG IN"> -->
       <!--  <div id="button"><a href="register">Register</a></div> -->
       <!--  <input type="submit" value ="Register" a href ="register"></a> -->
     <!--  <form action="register">
       <input type="submit" value="Register">
-    </form> -->
+    </form>
       </form>
-    </div>
+    </div> -->
 
   </fieldset>
 </div>
@@ -171,20 +209,7 @@
 w3IncludeHTML();
 
 </script>
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
+
 	<script src="js/main.js"></script>
 
   </body>
