@@ -20,7 +20,7 @@ function draw(){
 		stream.render();
 		//console.log("java");
 		//add console
-		
+
 
 }
 
@@ -29,17 +29,17 @@ function Symbol(x,y, speed){
 	this.y = y;
 	this.value;
 	this.speed = speed;
-	this.switchInterval = round(random(2,30)); 
+	this.switchInterval = round(random(2,30));
 
 	this.setToRandomSymbol = function() {
 		if(frameCount % this.switchInterval ==0){
 		this.value = String.fromCharCode(
-			0x30A0 + round(random(0,96))   //added japanese matrix 
-			
+			0x30A0 + round(random(0,96))   //added japanese matrix
+
 			);
 			}
 
-	this.x = x
+			this.x = x
 
 		}
 //random init
@@ -47,8 +47,8 @@ function Symbol(x,y, speed){
 				if (this.y >= height){
 					this.y = 0;
 
-				} else { 
-				this.y += this.speed;
+				} else {
+					this.y += this.speed;
 				}
 			}
 
