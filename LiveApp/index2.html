@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tradeshift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+      h1.sign-in {
+        font-style:Monaco,MonoSpace;
+      }
+
+    </style>
+
+    <!-- New Intergration-->
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+  </head>
+
+
+  <div w3-include-html="nav_bar.html"></div>
+
+  </div>
+
+<!--
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">TS Tracker</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+-->
+<!-- original img src https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs0d6gmquuO9LX87h0x7 -->
+  <div class="jumbotron jumbotron-fluid text-center"> <!--jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.-->
+<h1> <img src="https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs0d6gmquuO9LX87h0x7" alt="nothing" border="0">
+  <p class="lead">Built on JS/CSS</p><h1>
+    <p class="lead"> AJX v1.161018</p>
+</div>
+  <body>
+
+<!--New login form-->
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!--END New login form-->
+<!-- https://media.giphy.com/media/wsVRWfoRg1D79zglIj/giphy.gif rakesh-->
+<!-- rakesh left https://i.imgflip.com/2peq9n.gif -->
+<!-- <hr> FOR LINE -->
+<div class="form">
+    <fieldset>
+      <div class="text-center p-t-136">
+      <h1 class="sign-in">Welcome!</h1>
+
+      <div>
+        <!--  <label for="userName">Username:</label> -->
+          <input type="text" id="username" name="username"
+                 required placeholder ="Email Address*"/>
+      </div>
+
+      <div>
+        <!--  <label for="password">Password:</label> -->
+          <input type="password" id="password" name="password" style="margin:0.8px"
+                 minlength="8" required
+                 placeholder="Password*" />
+
+
+
+    </div>
+
+    <div>
+      <form action ="main.html">
+        <input type="submit" class="btn btn-warning" style="margin:15px" value="LOG IN">
+      <!--  <div id="button"><a href="register">Register</a></div> -->
+      <!--  <input type="submit" value ="Register" a href ="register"></a> -->
+    <!--  <form action="register">
+      <input type="submit" value="Register">
+    </form> -->
+      </form>
+    </div>
+
+  </fieldset>
+</div>
+</div>
+<script>
+w3IncludeHTML();
+
+</script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+  </body>
+</html>
